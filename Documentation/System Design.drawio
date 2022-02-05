@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-05T15:53:42.566Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="cuNZfp40n90uIkggVoin" version="16.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-05T15:55:51.213Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="ksO7I1nwSY_Nf7JNjCVE" version="16.5.3" type="github" pages="5">
   <diagram id="mlN1lr6VNzN7cxFdERIH" name="Authentication">
     <mxGraphModel dx="1138" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -163,7 +163,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZU1UuqrW1pWKJgc8ddJW" name="API Endpoints">
-    <mxGraphModel dx="1138" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="c0v6UYOoIOKIt0m8rgRB-0" />
         <mxCell id="c0v6UYOoIOKIt0m8rgRB-1" parent="c0v6UYOoIOKIt0m8rgRB-0" />
@@ -218,6 +218,30 @@
         <mxCell id="lw98s7chPgkuSUvIplJf-8" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;POST&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/requests/:rid&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;approve/reject&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;comments&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
           <mxGeometry x="220" y="660" width="120" height="140" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="GuPb17cSz0aAoLLf4HXN" name="User Interaction">
+    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="8m86IIgu7w236L_Eu7ke-0" />
+        <mxCell id="8m86IIgu7w236L_Eu7ke-1" parent="8m86IIgu7w236L_Eu7ke-0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oabOcnTiSBrD9kh8BW9r" name="Admin Interaction">
+    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="72VpCfdsLyYyJaGXq4wt-0" />
+        <mxCell id="72VpCfdsLyYyJaGXq4wt-1" parent="72VpCfdsLyYyJaGXq4wt-0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rDXRNRWcDo_nR5VQTPZp" name="NGO Interaction">
+    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="1Ok4reRKzZd63ouZMmTh-0" />
+        <mxCell id="1Ok4reRKzZd63ouZMmTh-1" parent="1Ok4reRKzZd63ouZMmTh-0" />
       </root>
     </mxGraphModel>
   </diagram>
