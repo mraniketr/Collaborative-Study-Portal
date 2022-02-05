@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-05T07:58:46.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="u3CAm8AyqWqgxGBalYTG" version="16.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-05T08:03:36.187Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="uaPxCXRKOoszkRelm8Cz" version="16.5.2" type="github" pages="2">
   <diagram id="mlN1lr6VNzN7cxFdERIH" name="Authentication">
     <mxGraphModel dx="1339" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -164,6 +164,18 @@
       <root>
         <mxCell id="c0v6UYOoIOKIt0m8rgRB-0" />
         <mxCell id="c0v6UYOoIOKIt0m8rgRB-1" parent="c0v6UYOoIOKIt0m8rgRB-0" />
+        <mxCell id="c0v6UYOoIOKIt0m8rgRB-2" value="Authentication" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+          <mxGeometry x="40" y="60" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c0v6UYOoIOKIt0m8rgRB-3" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/login&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/singnup&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+          <mxGeometry x="70" y="80" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c0v6UYOoIOKIt0m8rgRB-4" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+          <mxGeometry x="215" y="60" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c0v6UYOoIOKIt0m8rgRB-5" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/Profile&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+          <mxGeometry x="225" y="80" width="60" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
