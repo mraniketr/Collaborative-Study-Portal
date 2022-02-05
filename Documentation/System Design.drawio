@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-05T07:56:17.471Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="tM2_6bvvz3_OzCNGtIRD" version="16.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-05T07:58:32.826Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="DU8a78JVn_APlHvUfwSP" version="16.5.2" type="github">
   <diagram id="mlN1lr6VNzN7cxFdERIH" name="Authentication">
     <mxGraphModel dx="1339" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -152,6 +152,9 @@
             <mxPoint x="680" y="750" as="sourcePoint" />
             <mxPoint x="520" y="847.5" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="NsBSJuyFXzRyLEHLsMyV-43" value="&lt;font style=&quot;font-size: 14px&quot;&gt;With this approach&amp;nbsp;&lt;br&gt;we can limit the database calls&lt;br&gt;hence reduce cost in this community based&lt;br&gt;app, also since all the requests will be self contained&amp;nbsp;&lt;br&gt;without use of sessions(server) load will be heavily reduced&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="650" width="380" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
