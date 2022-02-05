@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-05T08:16:34.821Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="rjUL4t5HAOTwtvVu1S0v" version="16.5.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-05T08:25:28.426Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="F7ompy9ZRlQRJni3-Tiq" version="16.5.2" type="github" pages="2">
   <diagram id="mlN1lr6VNzN7cxFdERIH" name="Authentication">
     <mxGraphModel dx="1339" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -190,6 +190,12 @@
         </mxCell>
         <mxCell id="I9oKW8PXVLF5XC2T5D57-2" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;GET&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/listing&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;type&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;limit&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;offset&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;cookie&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;particular list&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
           <mxGeometry x="440" y="180" width="120" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="XtNNtIao0WBWiyCKGlqJ-0" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;GET&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/content/:id&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;mode&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;particular list&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+          <mxGeometry x="620" y="180" width="120" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="XtNNtIao0WBWiyCKGlqJ-1" value="Content" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+          <mxGeometry x="630" y="150" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
