@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-05T15:57:21.174Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="DFBNRy0wITLliAy7CVjK" version="16.5.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-02-06T14:43:43.850Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="MU2kiYAzE6vJ_PkhK218" version="16.5.3" type="github" pages="5">
   <diagram id="mlN1lr6VNzN7cxFdERIH" name="Authentication">
-    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1138" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -163,7 +163,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZU1UuqrW1pWKJgc8ddJW" name="API Endpoints">
-    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1138" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="c0v6UYOoIOKIt0m8rgRB-0" />
         <mxCell id="c0v6UYOoIOKIt0m8rgRB-1" parent="c0v6UYOoIOKIt0m8rgRB-0" />
@@ -197,40 +197,99 @@
         <mxCell id="XtNNtIao0WBWiyCKGlqJ-1" value="Content" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
           <mxGeometry x="630" y="150" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="lw98s7chPgkuSUvIplJf-0" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;PATCH&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/content/:cid/&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Content to&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;modify&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;particular list&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+        <mxCell id="lw98s7chPgkuSUvIplJf-0" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;PATCH&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/content/:cid/&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Content to&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;modify&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;particular list&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
           <mxGeometry x="640" y="430" width="160" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="lw98s7chPgkuSUvIplJf-3" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;PUT&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/listing/forum/:fid&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Comments&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message, cid&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+        <mxCell id="lw98s7chPgkuSUvIplJf-3" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;PUT&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/listing/forum/:fid&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Comments&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message, cid&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
           <mxGeometry x="440" y="400" width="150" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="lw98s7chPgkuSUvIplJf-4" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;DELETE&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/listing/forum/:fid&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;comment ID&lt;/span&gt;&lt;/div&gt;&lt;div&gt;cid&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message, cid&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
-          <mxGeometry x="440" y="630" width="150" height="200" as="geometry" />
+        <mxCell id="lw98s7chPgkuSUvIplJf-4" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;DELETE&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/listing/forum/:fid&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;comment ID&lt;/span&gt;&lt;/div&gt;&lt;div&gt;cid&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message, cid&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
+          <mxGeometry x="450" y="670" width="150" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="lw98s7chPgkuSUvIplJf-5" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;b&gt;POST&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/content/:cid/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;Content Data&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+        <mxCell id="lw98s7chPgkuSUvIplJf-5" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;b&gt;POST&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/content/:cid/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;Content Data&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
           <mxGeometry x="640" y="670" width="160" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="lw98s7chPgkuSUvIplJf-6" value="Admin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+        <mxCell id="lw98s7chPgkuSUvIplJf-6" value="Admin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
           <mxGeometry x="45" y="630" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="lw98s7chPgkuSUvIplJf-7" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;GET&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/requests&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;cookie&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;all content&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;request details&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+        <mxCell id="lw98s7chPgkuSUvIplJf-7" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;GET&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/requests&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;cookie&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;all content&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;request details&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
           <mxGeometry x="45" y="660" width="120" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="lw98s7chPgkuSUvIplJf-8" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;POST&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/requests/:rid&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;approve/reject&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;comments&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="c0v6UYOoIOKIt0m8rgRB-1">
+        <mxCell id="lw98s7chPgkuSUvIplJf-8" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;POST&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;/requests/:rid&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;REQ&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;approve/reject&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;comments&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;Res&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="c0v6UYOoIOKIt0m8rgRB-1" vertex="1">
           <mxGeometry x="220" y="660" width="120" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="GuPb17cSz0aAoLLf4HXN" name="User Interaction">
-    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1138" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="8m86IIgu7w236L_Eu7ke-0" />
         <mxCell id="8m86IIgu7w236L_Eu7ke-1" parent="8m86IIgu7w236L_Eu7ke-0" />
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="8pMybFn7hFTpGmJMEQ0C-22" target="y18nd3dyhlxr6UuUFKT0-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8pMybFn7hFTpGmJMEQ0C-22" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;STUDENT" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="80" y="220" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="y18nd3dyhlxr6UuUFKT0-0" target="y18nd3dyhlxr6UuUFKT0-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="250" />
+              <mxPoint x="350" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="y18nd3dyhlxr6UuUFKT0-0" target="y18nd3dyhlxr6UuUFKT0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="y18nd3dyhlxr6UuUFKT0-0" target="y18nd3dyhlxr6UuUFKT0-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="250" />
+              <mxPoint x="350" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="y18nd3dyhlxr6UuUFKT0-0" target="y18nd3dyhlxr6UuUFKT0-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="y18nd3dyhlxr6UuUFKT0-0" target="y18nd3dyhlxr6UuUFKT0-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-0" value="ACTIONS" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="240" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="y18nd3dyhlxr6UuUFKT0-2" target="y18nd3dyhlxr6UuUFKT0-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-2" value="ACCESS&lt;br&gt;STUDY&lt;br&gt;MATERIALS" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="380" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-4" value="Update /Modify Study material and submit for approval" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="220" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-8" value="Create Mentor&lt;br&gt;Request" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="380" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-10" value="Participate in conversation in every page ask doubts" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="580" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-12" value="Join NGO Events" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="380" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y18nd3dyhlxr6UuUFKT0-17" value="Start a forum discussion" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="380" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="oabOcnTiSBrD9kh8BW9r" name="Admin Interaction">
-    <mxGraphModel dx="1138" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1138" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="72VpCfdsLyYyJaGXq4wt-0" />
         <mxCell id="72VpCfdsLyYyJaGXq4wt-1" parent="72VpCfdsLyYyJaGXq4wt-0" />
