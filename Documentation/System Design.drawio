@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-06T14:46:29.515Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="8vV59h9HEtB88qqgk_6D" version="16.5.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-02-06T15:01:12.048Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="7sXNLPql9V17HCoEM2Zk" version="16.5.3" type="github" pages="3">
   <diagram id="mlN1lr6VNzN7cxFdERIH" name="Authentication">
     <mxGraphModel dx="1138" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -332,6 +332,21 @@
         </mxCell>
         <mxCell id="y18nd3dyhlxr6UuUFKT0-52" value="Provide content and delete data" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
           <mxGeometry x="570" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XXfuvAaqi87T2E58lLyB-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="XXfuvAaqi87T2E58lLyB-7" target="XXfuvAaqi87T2E58lLyB-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XXfuvAaqi87T2E58lLyB-7" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Mentor" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="70" y="530" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XXfuvAaqi87T2E58lLyB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="8m86IIgu7w236L_Eu7ke-1" source="XXfuvAaqi87T2E58lLyB-9" target="XXfuvAaqi87T2E58lLyB-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XXfuvAaqi87T2E58lLyB-9" value="ACTIONS" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="230" y="520" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XXfuvAaqi87T2E58lLyB-10" value="View Mentorship request and chat to provide resolution" style="whiteSpace=wrap;html=1;" vertex="1" parent="8m86IIgu7w236L_Eu7ke-1">
+          <mxGeometry x="370" y="530" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
