@@ -1,11 +1,12 @@
 import { MongoClient } from "mongodb";
-
+import { clientPromise } from "./mongodb";
 const handler = async (req, res) => {
   if (req.method === "POST") {
     const collName = req.body.collection;
     const limit = req.body.limit ?? 10;
     console.log(collName);
     const client = await MongoClient.connect(process.env.MONGODB_URI);
+
     const db = client.db();
     const Collection = db.collection(collName);
 
