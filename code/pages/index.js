@@ -19,7 +19,7 @@ export default function Home() {
       <br />
       <a href="/api/auth/me">User Data</a>
       <br />
-      <a href="/meal">test insert data add meals</a>
+      <a href="/meals">test insert data add meals</a>
     </div>
   );
 }
