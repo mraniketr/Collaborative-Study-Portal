@@ -14,16 +14,16 @@ const Courses = () => {
                         Class 10
                     </div>
                     <div className='grid grid-cols-5 gap-6'>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
                     </div>
                 </div>
                 <div className='flex flex-col px-36 py-4'>
@@ -31,16 +31,16 @@ const Courses = () => {
                         Class 10
                     </div>
                     <div className='grid grid-cols-5 gap-6'>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
                     </div>
                 </div>
                 <div className='flex flex-col px-36 py-4'>
@@ -48,16 +48,16 @@ const Courses = () => {
                         Class 10
                     </div>
                     <div className='grid grid-cols-5 gap-6'>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
-                        <div className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300'>Science</div>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
+                        <button className='px-4 py-3 flex justify-center rounded-lg border border-blue-700 bg-blue-300 hover:bg-blue-400'>Science</button>
                     </div>
                 </div>
             </div>
