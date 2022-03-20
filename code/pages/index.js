@@ -15,6 +15,8 @@ export default function Home() {
       <br />
       <a href="/api/auth/logout">Logout</a>
       <br />
+      <a href="/protected">protected</a>
+      <br />
       <a href="/api/auth/me">User Data</a>
     </div>
   );
