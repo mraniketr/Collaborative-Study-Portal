@@ -16,6 +16,8 @@ export default function Home() {
       <a href="/api/auth/logout">Logout</a>
       <br />
       <a href="/api/auth/me">User Data</a>
+      <br />
+      <a href="/meal">test insert data add meals</a>
     </div>
   );
 }
