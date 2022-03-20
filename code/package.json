@@ -11,6 +11,7 @@
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.7.0",
     "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
     "classnames": "^2.3.1",
     "mongodb": "^4.4.1",
     "next": "12.1.0",
