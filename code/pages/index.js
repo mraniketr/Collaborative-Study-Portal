@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Home() {
+function Home({ data }) {
+
+  console.log(data)
   return (
     <div>
       <Head>
@@ -23,3 +25,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home
