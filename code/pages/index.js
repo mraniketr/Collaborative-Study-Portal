@@ -1,9 +1,44 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useUser } from '@auth0/nextjs-auth0';
 
-function Home({ data }) {
+export default function Index() {
+  const { user, error, isLoading } = useUser();
 
-  console.log(data)
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
+
+  if (user) {
+    return (
+      <div>
+      <Head>
+        <title>Collaborative Study Portal</title>
+        <meta name="description" content="Learn together Grow together" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <h1 className="text-3xl font-bold ">EzyPzy</h1>
+      <br />
+      <h1 className="text-3xl font-bold underline">Landing Page</h1>
+      <br />
+      <a href="/api/auth/login">Login</a>
+      <br />  
+      <a href="/api/auth/logout">Logout</a>
+      <br />
+      <a href="/protected">protected</a>
+      <br />
+      <a href="/api/auth/me">User Data</a>
+      <br />
+      <a href="/courses">courses</a>
+      <br />
+      <br />
+      <br />
+      <div>
+      Welcome <b> {user.name}! </b>
+      </div>
+    </div>
+    );
+  }
+
   return (
     <div>
       <Head>
@@ -11,8 +46,10 @@ function Home({ data }) {
         <meta name="description" content="Learn together Grow together" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <h1 className="text-3xl font-bold ">EzyPzy</h1>
+      <br />
       <h1 className="text-3xl font-bold underline">Landing Page</h1>
+      <br />
       <a href="/api/auth/login">Login</a>
       <br />
       <a href="/api/auth/logout">Logout</a>
@@ -21,8 +58,8 @@ function Home({ data }) {
       <br />
       <a href="/api/auth/me">User Data</a>
       <br />
-      <a href="/meals">test insert data add meals</a>
+      <a href="/courses">courses</a>
     </div>
   );
 }
-export default Home
+

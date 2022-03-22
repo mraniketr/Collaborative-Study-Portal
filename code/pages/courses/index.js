@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 
+import { withPageAuthRequired } from '@auth0/nextjs-auth0';
+
+
 const Courses = ({ courses }) => {
     return (
         <React.Fragment>
@@ -26,7 +29,9 @@ const Courses = ({ courses }) => {
         </React.Fragment>
     )
 }
-export async function getServerSideProps(context) {
+export const getServerSideProps = withPageAuthRequired({
+
+async getServerSideProps(context) {
     const res = await fetch('http://localhost:3000/api/ReadData', {
         method: "POST",
         headers: {
@@ -42,5 +47,6 @@ export async function getServerSideProps(context) {
         },
     }
 }
+});
 
 export default Courses
