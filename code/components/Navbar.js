@@ -28,7 +28,7 @@ const Navbar = () => {
 								/>
 							</div>
 							<div className="flex text-base text-white cursor-pointer">
-								<Link href="/api/auth/me">{user.nickname}</Link>
+								<Link href="/userdetail">{user.nickname}</Link>
 							</div>
 						</React.Fragment>
 					) : (
