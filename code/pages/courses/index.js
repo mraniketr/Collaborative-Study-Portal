@@ -25,7 +25,11 @@ const Courses = ({ courses }) => {
 											key={s_index}
 											className="flex justify-center px-4 py-3 bg-blue-300 border border-blue-700 rounded-lg hover:bg-blue-400"
 										>
-											<Link href="/courses/details">{subject.subjectName}</Link>
+											<Link
+												href={`/courses/${course.courseId}/${subject.subjectId}`}
+											>
+												{subject.subjectName}
+											</Link>
 										</button>
 									);
 								})}
