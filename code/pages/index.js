@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useUser } from '@auth0/nextjs-auth0';
+import { useUser } from "@auth0/nextjs-auth0";
 import Navbar from "../components/Navbar";
 
 export default function Index() {
@@ -12,13 +12,13 @@ export default function Index() {
   if (user) {
     return (
       <div>
-      <Head>
-        <title>Collaborative Study Portal</title>
-        <meta name="description" content="Learn together Grow together" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Navbar />
-      <br />
+        <Head>
+          <title>Collaborative Study Portal</title>
+          <meta name="description" content="Learn together Grow together" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Navbar />
+        {/* <br />
       <h1 className="text-3xl font-bold underline">Landing Page</h1>
       <br />
       <a href="/api/auth/login">Login</a>
@@ -32,11 +32,8 @@ export default function Index() {
       <a href="/courses">courses</a>
       <br />
       <br />
-      <br />
-      <div>
-      Welcome <b> {user.name}! </b>
+      <br /> */}
       </div>
-    </div>
     );
   }
 
@@ -63,4 +60,3 @@ export default function Index() {
     </div>
   );
 }
-
