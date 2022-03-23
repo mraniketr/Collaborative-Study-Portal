@@ -3,7 +3,7 @@ import { clientPromise } from "./mongodb";
 const handler = async (req, res) => {
   console.log("collName");
   const collName = req.body.collection;
-
+  const filter = req.body.filter;
   const limit = req.body.limit ?? 10;
   const client = await MongoClient.connect(process.env.MONGODB_URI);
 
@@ -11,7 +11,7 @@ const handler = async (req, res) => {
   const Collection = db.collection(collName);
   console.log(collName);
   if (req.method === "POST") {
-    const resData = await Collection.find({}, { _id: 0 })
+    const resData = await Collection.find(filter ?? {}, { _id: 0 })
       .limit(limit)
       .toArray();
     console.log(resData);
