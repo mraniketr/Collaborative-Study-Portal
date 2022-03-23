@@ -7,20 +7,14 @@ const Navbar = () => {
   return (
     <div className="absolute flex flex-row items-center justify-between w-full h-16 bg-blue-600 shadow-sm px-36">
       <div className="flex text-2xl font-bold text-white">
-        <Link href="/">
-          <div className="text-white">EzyPzy</div>
-        </Link>
+        <Link href="/">EzyPzy</Link>
       </div>
       <div className="flex flex-row space-x-6 ">
         <div className="flex text-base text-white cursor-pointer">
-          <Link href="/courses">
-            <div className="text-white">Courses</div>
-          </Link>
+          <Link href="/courses">Courses</Link>
         </div>
         <div className="flex text-base text-white cursor-pointer">
-          <Link href="/forum">
-            <div className="text-white">Forum</div>
-          </Link>
+          <Link href="/forum">Forum</Link>
         </div>
         <div className="flex flex-row ">
           {user ? (
@@ -39,9 +33,7 @@ const Navbar = () => {
             </React.Fragment>
           ) : (
             <div className="flex text-base text-white cursor-pointer">
-              <Link href="/api/auth/login">
-                <div className="text-white">Login</div>
-              </Link>
+              <Link href="/api/auth/login">Login</Link>
             </div>
           )}
         </div>
