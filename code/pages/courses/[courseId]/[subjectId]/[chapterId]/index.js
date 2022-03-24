@@ -20,16 +20,16 @@ const Chapters = ({ chapter }) => {
 					<div className="grid grid-cols-5 gap-6">
 						{chapter?.topics?.map((topic, t_index) => {
 							return (
-								<button
-									key={t_index}
-									className="flex justify-center px-4 py-3 bg-blue-300 border border-blue-700 rounded-lg hover:bg-blue-400"
+								<Link
+									href={`/courses/${chapter.courseId}/${chapter.subjectId}/${chapter.chapterId}/${topic.topicId}/learn`}
 								>
-									<Link
-										href={`/courses/${chapter.courseId}/${chapter.subjectId}/${chapter.chapterId}/${topic.topicId}/learn`}
+									<button
+										key={t_index}
+										className="flex justify-center px-4 py-3 bg-blue-300 border border-blue-700 rounded-lg hover:bg-blue-400"
 									>
 										{topic.topicName}
-									</Link>
-								</button>
+									</button>
+								</Link>
 							);
 						})}
 					</div>
@@ -49,6 +49,8 @@ export const getServerSideProps = withPageAuthRequired({
 			body: JSON.stringify({
 				collection: "chapters",
 				filters: {
+					courseId: context.query.courseId,
+					subjectId: context.query.subjectId,
 					chapterId: context.query.chapterId,
 				},
 			}),

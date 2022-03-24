@@ -23,16 +23,16 @@ const Subjects = ({ subject }) => {
 					<div className="grid grid-cols-5 gap-6">
 						{subject?.chapters?.map((chapter, s_index) => {
 							return (
-								<button
-									key={s_index}
-									className="flex justify-center px-4 py-3 bg-blue-300 border border-blue-700 rounded-lg hover:bg-blue-400"
+								<Link
+									href={`/courses/${subject.courseId}/${subject.subjectId}/${chapter.chapterId}`}
 								>
-									<Link
-										href={`/courses/${subject.courseId}/${subject.subjectId}/${chapter.chapterId}`}
+									<button
+										key={s_index}
+										className="flex justify-center px-4 py-3 bg-blue-300 border border-blue-700 rounded-lg hover:bg-blue-400"
 									>
 										{chapter.chapterName}
-									</Link>
-								</button>
+									</button>
+								</Link>
 							);
 						})}
 					</div>
@@ -53,6 +53,7 @@ export const getServerSideProps = withPageAuthRequired({
 			body: JSON.stringify({
 				collection: "subjects",
 				filters: {
+					courseId: context.query.courseId,
 					subjectId: context.query.subjectId,
 				},
 			}),

@@ -19,18 +19,18 @@ const Courses = ({ courses }) => {
 								{course.courseName ?? ""}
 							</div>
 							<div className="grid grid-cols-5 gap-6">
-								{course?.subjects.map((subject, s_index) => {
+								{course?.subjects?.map((subject, s_index) => {
 									return (
-										<button
-											key={s_index}
-											className="flex justify-center px-4 py-3 bg-blue-300 border border-blue-700 rounded-lg hover:bg-blue-400"
+										<Link
+											href={`/courses/${course.courseId}/${subject.subjectId}`}
 										>
-											<Link
-												href={`/courses/${course.courseId}/${subject.subjectId}`}
+											<button
+												key={s_index}
+												className="flex justify-center px-4 py-3 bg-blue-300 border border-blue-700 rounded-lg hover:bg-blue-400"
 											>
 												{subject.subjectName}
-											</Link>
-										</button>
+											</button>
+										</Link>
 									);
 								})}
 							</div>

@@ -20,6 +20,7 @@ const ViewCourse = ({ topic }) => {
 						<div className="w-full mb-3 bg-blue-200 h-96">
 							<video
 								autoPlay
+								controls
 								loop
 								// src={
 								// 	"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -162,7 +163,11 @@ export const getServerSideProps = withPageAuthRequired({
 			body: JSON.stringify({
 				collection: "topics",
 				filters: {
+					courseId: context.query.courseId,
+					subjectId: context.query.subjectId,
+					chapterId: context.query.chapterId,
 					topicId: context.query.topicId,
+					activeStatus: true,
 				},
 			}),
 		});
