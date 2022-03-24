@@ -1,23 +1,24 @@
 import React from "react";
 import Navbar from "../../../../../../components/Navbar";
 import { Disclosure, Tab } from "@headlessui/react";
-import { ChevronUpIcon, PlayIcon } from "@heroicons/react/solid";
+import { ChevronUpIcon, PlayIconm, PencilIcon } from "@heroicons/react/solid";
 import classNames from "classnames";
 import DiscussionCard from "../../../../../../components/Discussioncard";
 import ResourceCard from "../../../../../../components/ResourceCard";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
+import Link from "next/link";
 
 const ViewCourse = ({ topic }) => {
 	return (
 		<React.Fragment>
 			<Navbar />
-			<div className="flex flex-col items-start px-6 pt-16">
+			<div className="relative flex flex-col items-start px-6 pt-16">
 				<div className="flex flex-row items-center w-full py-2 text-base border-b border-black">
 					Class 10 <span className="mx-4">{">"} </span> Science
 				</div>
 				<div className="flex flex-row w-full h-full mb-3">
 					<div className="w-full h-full pt-3 pr-3">
-						<div className="w-full mb-3 bg-blue-200 h-96">
+						<div className="w-full mb-3 bg-blue-200 h-[50vh]">
 							<video
 								autoPlay
 								controls
@@ -108,48 +109,15 @@ const ViewCourse = ({ topic }) => {
 							</Tab.Group>
 						</div>
 					</div>
-					<div className="min-w-[350px] max-w-[400px] border-l border-black pl-4">
-						<div className="w-full mt-3">
-							<Disclosure>
-								{({ open }) => (
-									<>
-										<Disclosure.Button className="flex items-start justify-between w-full px-2 py-2 bg-gray-200 border border-gray-500">
-											<span>
-												{" "}
-												<span className="mr-3"> 1.</span>Animals around Us
-											</span>{" "}
-											<ChevronUpIcon
-												className={classNames(
-													"w-5 h-5 text-blue-500",
-													open ? "transform rotate-180" : ""
-												)}
-											/>
-										</Disclosure.Button>
-										<Disclosure.Panel className="flex items-center w-full px-2 py-2 mt-1 bg-gray-100 border border-gray-500">
-											<PlayIcon className={"w-5 h-5 mr-5 text-blue-500"} />{" "}
-											<span>
-												<span className="mr-2"> 1.1</span> Who are we?
-											</span>
-										</Disclosure.Panel>
-										<Disclosure.Panel className="flex items-center w-full px-2 py-2 mt-1 bg-gray-100 border border-gray-500">
-											<PlayIcon className={"w-5 h-5 mr-5 text-blue-500"} />{" "}
-											<span>
-												<span className="mr-2"> 1.2</span> Who are we?
-											</span>
-										</Disclosure.Panel>
-										<Disclosure.Panel className="flex items-center w-full px-2 py-2 mt-1 bg-gray-100 border border-gray-500">
-											<PlayIcon className={"w-5 h-5 mr-5 text-blue-500"} />{" "}
-											<span>
-												<span className="mr-2"> 1.3</span> Who are we?
-											</span>
-										</Disclosure.Panel>
-									</>
-								)}
-							</Disclosure>
-						</div>
-					</div>
 				</div>
 			</div>
+			<Link
+				href={`/courses/${topic.courseId}/${topic.subjectId}/${topic.chapterId}/${topic.topicId}/update`}
+			>
+				<div className="absolute flex items-center justify-center w-10 h-10 p-2 text-xl text-white bg-blue-700 rounded-full bottom-6 right-10">
+					<PencilIcon className="" />
+				</div>
+			</Link>
 		</React.Fragment>
 	);
 };
@@ -162,7 +130,7 @@ export const getServerSideProps = withPageAuthRequired({
 			},
 			body: JSON.stringify({
 				collection: "topics",
-				filters: {
+				filter: {
 					courseId: context.query.courseId,
 					subjectId: context.query.subjectId,
 					chapterId: context.query.chapterId,

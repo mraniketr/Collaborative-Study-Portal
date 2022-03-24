@@ -52,7 +52,7 @@ export const getServerSideProps = withPageAuthRequired({
 			},
 			body: JSON.stringify({
 				collection: "subjects",
-				filters: {
+				filter: {
 					courseId: context.query.courseId,
 					subjectId: context.query.subjectId,
 				},
