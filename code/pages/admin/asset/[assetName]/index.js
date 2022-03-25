@@ -4,7 +4,19 @@ import Link from "next/link";
 
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
-const AssetEdit = ({ data }) => {
+const AssetEdit = ({ data, collName }) => {
+  const handleReject = async (id, collName) => {
+    console.log("Deleted", id);
+    const res = await fetch("http://localhost:3000/api/DeleteData", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ collection: collName, deleteId: id }),
+    });
+    console.log(res);
+    location.reload();
+  };
   return (
     <React.Fragment>
       <Navbar />
@@ -13,13 +25,18 @@ const AssetEdit = ({ data }) => {
           Pending Requests
         </div>
         <div className="grid grid-cols-3 gap-20 p-10">
-          {data.map((val, idx) => {
+          {data?.map((val, idx) => {
+            var id = "";
             return (
-              <div className="flex flex-col">
+              <div className="flex flex-col" key={idx}>
                 <div>
-                  {Object.keys(val).map((x, i) => {
+                  {Object.keys(val)?.map((x, i) => {
+                    id = val["_id"];
                     return (
-                      <div className="flex flex-row justify-between gap-10 ">
+                      <div
+                        key={i}
+                        className="flex flex-row justify-between gap-10 "
+                      >
                         <div>{x}</div>
                         <div>{val[x]}</div>
                       </div>
@@ -27,16 +44,16 @@ const AssetEdit = ({ data }) => {
                   })}
                 </div>
                 <div className="flex flex-row justify-between">
-                  <Link href={`/courses/`}>
-                    <button className="flex justify-center px-4 py-3 bg-green-400 border border-blue-700 rounded-lg hover:bg-blue-400">
-                      Approve
-                    </button>
-                  </Link>
-                  <Link href={`/courses/`}>
-                    <button className="flex justify-center px-4 py-3 bg-red-400 border border-blue-700 rounded-lg hover:bg-blue-400">
-                      Reject
-                    </button>
-                  </Link>
+                  <button className="flex justify-center px-4 py-3 bg-green-400 border border-blue-700 rounded-lg hover:bg-blue-400">
+                    Approve
+                  </button>
+
+                  <button
+                    onClick={() => handleReject(id, collName)}
+                    className="flex justify-center px-4 py-3 bg-red-400 border border-blue-700 rounded-lg hover:bg-blue-400"
+                  >
+                    Reject
+                  </button>
                 </div>
               </div>
             );
@@ -46,6 +63,7 @@ const AssetEdit = ({ data }) => {
     </React.Fragment>
   );
 };
+
 export const getServerSideProps = withPageAuthRequired({
   async getServerSideProps(context) {
     const res = await fetch("http://localhost:3000/api/ReadData", {
@@ -61,11 +79,12 @@ export const getServerSideProps = withPageAuthRequired({
       }),
     });
     const data = await res.json();
-    console.log(data.data);
+    console.log(data?.data);
 
     return {
       props: {
-        data: data.data,
+        data: data.data ?? null,
+        collName: context.query.assetName,
       },
     };
   },

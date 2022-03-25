@@ -1,6 +1,7 @@
 import { MongoClient, ObjectId } from "mongodb";
 import { clientPromise } from "./mongodb";
 const handler = async (req, res) => {
+  console.log("Delete Request received");
   const collName = req.body.collection;
   const client = await MongoClient.connect(process.env.MONGODB_URI);
 
