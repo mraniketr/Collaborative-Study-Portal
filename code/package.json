@@ -14,10 +14,16 @@
     "@heroicons/react": "^1.0.6",
     "classnames": "^2.3.1",
     "formik": "^2.2.9",
+    "install": "^0.13.0",
     "mongodb": "^4.4.1",
     "next": "12.1.0",
+    "npm": "^8.5.5",
     "react": "17.0.2",
+    "react-collapsible": "^2.8.4",
     "react-dom": "17.0.2",
+    "react-responsive-accordion": "^1.0.0",
+    "react-responsive-button": "^0.2.1",
+    "react-responsive-carousel": "^3.2.23",
     "yup": "^0.32.11"
   },
   "devDependencies": {
