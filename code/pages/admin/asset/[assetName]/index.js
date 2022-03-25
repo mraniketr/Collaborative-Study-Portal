@@ -5,16 +5,44 @@ import Link from "next/link";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
 const AssetEdit = ({ data, collName }) => {
-  const handleReject = async (id, collName) => {
-    console.log("Deleted", id);
+  const handleReject = async (val, collName) => {
+    console.log("Deleted", val["_id"]);
     const res = await fetch("http://localhost:3000/api/DeleteData", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ collection: collName, deleteId: id }),
+      body: JSON.stringify({ collection: collName, deleteId: val["_id"] }),
     });
     console.log(res);
+    location.reload();
+  };
+
+  const handleApprove = async (val, collName) => {
+    console.log("Approve", val["_id"]);
+    val["activeStatus"] = true;
+    delete val["_id"];
+    var deleteFilterKeys = Object.keys(val).filter((val) => val.includes("Id"));
+    console.log(deleteFilterKeys);
+    var deleteFilter = {};
+    deleteFilterKeys.map((x) => (deleteFilter[x] = val[x]));
+
+    const res = await fetch("http://localhost:3000/api/DeleteData", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ collection: collName, filter: deleteFilter }),
+    });
+    console.log(res);
+
+    const res2 = await fetch("http://localhost:3000/api/InsertData", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ collection: collName, insertObj: val }),
+    });
     location.reload();
   };
   return (
@@ -26,12 +54,10 @@ const AssetEdit = ({ data, collName }) => {
         </div>
         <div className="grid grid-cols-3 gap-20 p-10">
           {data?.map((val, idx) => {
-            var id = "";
             return (
               <div className="flex flex-col" key={idx}>
                 <div>
                   {Object.keys(val)?.map((x, i) => {
-                    id = val["_id"];
                     return (
                       <div
                         key={i}
@@ -44,12 +70,15 @@ const AssetEdit = ({ data, collName }) => {
                   })}
                 </div>
                 <div className="flex flex-row justify-between">
-                  <button className="flex justify-center px-4 py-3 bg-green-400 border border-blue-700 rounded-lg hover:bg-blue-400">
+                  <button
+                    onClick={() => handleApprove(val, collName)}
+                    className="flex justify-center px-4 py-3 bg-green-400 border border-blue-700 rounded-lg hover:bg-blue-400"
+                  >
                     Approve
                   </button>
 
                   <button
-                    onClick={() => handleReject(id, collName)}
+                    onClick={() => handleReject(val, collName)}
                     className="flex justify-center px-4 py-3 bg-red-400 border border-blue-700 rounded-lg hover:bg-blue-400"
                   >
                     Reject
