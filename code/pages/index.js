@@ -18,21 +18,6 @@ export default function Index() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />
-        {/* <br />
-      <h1 className="text-3xl font-bold underline">Landing Page</h1>
-      <br />
-      <a href="/api/auth/login">Login</a>
-      <br />  
-      <a href="/api/auth/logout">Logout</a>
-      <br />
-      <a href="/protected">protected</a>
-      <br />
-      <a href="/api/auth/me">User Data</a>
-      <br />
-      <a href="/courses">courses</a>
-      <br />
-      <br />
-      <br /> */}
       </div>
     );
   }
@@ -45,18 +30,6 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <br />
-      <h1 className="text-3xl font-bold underline">Landing Page</h1>
-      <br />
-      <a href="/api/auth/login">Login</a>
-      <br />
-      <a href="/api/auth/logout">Logout</a>
-      <br />
-      <a href="/protected">protected</a>
-      <br />
-      <a href="/api/auth/me">User Data</a>
-      <br />
-      <a href="/courses">courses</a>
     </div>
   );
 }
