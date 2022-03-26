@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import * as yup from "yup";
 import { Field, Form, Formik, useFormik } from "formik";
 import { useRouter } from "next/router";
-import Navbar from "../../../../../../components/Navbar";
+import Navbar from "../../../../../components/Navbar";
 
 const update = () => {
 	const router = useRouter();
-	const { courseId, subjectId, chapterId, topicId } = router.query;
+	console.log(router);
+	const { courseId, subjectId, chapterId } = router.query;
 	const [initialValue, setInitialValue] = useState({
 		topicName: "Light1 New 2",
 		topicDescription: "lorem ipsum sadasdas asdasdasdasda",
@@ -27,7 +28,6 @@ const update = () => {
 					initialValues={initialValue}
 					validationSchema={() => validationSchema}
 					onSubmit={async (values) => {
-						alert(JSON.stringify(values, null, 2));
 						var res = await fetch("http://localhost:3000/api/InsertData", {
 							method: "POST",
 							headers: {

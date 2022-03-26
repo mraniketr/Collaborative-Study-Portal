@@ -25,7 +25,7 @@ const Courses = ({ courses }) => {
 						<div key={c_index} className="flex flex-col py-4 px-36">
 							<div className="flex flex-row items-center justify-start w-full py-2 mb-2 space-x-3 border-b border-black">
 								{course.courseName ?? ""}
-								<Link href={`/courses/${parseInt(course.courseId)}/edit`}>
+								<Link href={`/courses/update/edit/course/${course.courseId}`}>
 									<PencilIcon className="w-4 h-4 ml-2 text-gray-400 hover:text-gray-500" />
 								</Link>
 							</div>
@@ -33,8 +33,7 @@ const Courses = ({ courses }) => {
 								{course?.subjects?.map((subject, s_index) => {
 									return (
 										<Link
-											key={s_index}
-											href={`/courses/${course.courseId}/subjects/${subject.subjectId}`}
+											href={`/courses/${course.courseId}/${subject.subjectId}`}
 										>
 											<button
 												key={s_index}
@@ -55,9 +54,9 @@ const Courses = ({ courses }) => {
 											}
 										});
 										router.push(
-											`/courses/${course.courseId}/subjects/${
+											`/courses/update/add/subject/${
 												parseInt(maxSubjectId) + 1
-											}/add`
+											}`
 										);
 									}}
 									className="flex justify-center px-4 py-3 border border-blue-700 rounded-lg hover:bg-blue-700 hover:text-white"
@@ -69,7 +68,7 @@ const Courses = ({ courses }) => {
 					);
 				})}
 
-				<Link href={`/courses/${parseInt(maxCourseId) + 1}/add`}>
+				<Link href={`/courses/update/add/course/${parseInt(maxCourseId) + 1}`}>
 					<div className="absolute flex items-center justify-center w-10 h-10 p-2 text-xl text-white bg-blue-700 rounded-full bottom-6 right-10">
 						<PlusIcon className="" />
 					</div>

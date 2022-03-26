@@ -53,40 +53,47 @@ const AssetEdit = ({ data, collName }) => {
 					Pending Requests
 				</div>
 				<div className="grid grid-cols-3 gap-20 p-10">
-					{data?.map((val, idx) => {
-						return (
-							<div className="flex flex-col" key={idx}>
-								<div>
-									{Object.keys(val)?.map((x, i) => {
-										return (
-											<div
-												key={i}
-												className="flex flex-row justify-between gap-10 "
+					{data
+						? data?.map((val, idx) => {
+								return (
+									<div
+										className="flex flex-col p-6 bg-white rounded-xl"
+										key={idx}
+									>
+										<div>
+											{Object.keys(val)?.map((x, i) => {
+												return (
+													<li
+														key={i}
+														className="flex flex-row justify-between gap-10 py-0.5 space-x-6 hover:bg-slate-100"
+													>
+														<div className="flex basis-1/3">{x}</div>
+														<div className="flex basis-2/3 line-clamp-1">
+															{`${val[x]}`}
+														</div>
+													</li>
+												);
+											})}
+										</div>
+										<div className="flex flex-row justify-between mt-4 space-x-3">
+											<button
+												onClick={() => handleApprove(val, collName)}
+												className="flex justify-center w-full py-2 bg-green-400 rounded-sm hover:bg-green-500"
 											>
-												<div>{x}</div>
-												<div>{val[x]}</div>
-											</div>
-										);
-									})}
-								</div>
-								<div className="flex flex-row justify-between">
-									<button
-										onClick={() => handleApprove(val, collName)}
-										className="flex justify-center px-4 py-3 bg-green-400 border border-blue-700 rounded-lg hover:bg-blue-400"
-									>
-										Approve
-									</button>
+												Approve
+											</button>
 
-									<button
-										onClick={() => handleReject(val, collName)}
-										className="flex justify-center px-4 py-3 bg-red-400 border border-blue-700 rounded-lg hover:bg-blue-400"
-									>
-										Reject
-									</button>
-								</div>
-							</div>
-						);
-					})}
+											<button
+												onClick={() => handleReject(val, collName)}
+												className="flex justify-center w-full py-2 bg-red-500 rounded-sm hover:bg-red-400"
+											>
+												Reject
+											</button>
+										</div>
+									</div>
+								);
+						  })
+						: "No Pending Requests"}
 				</div>
 			</div>
 		</React.Fragment>
