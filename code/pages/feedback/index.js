@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import InputField from "../../components/InputField";
 import Navbar from "../../components/Navbar";
 
-const feedback = () => {
+const Feedback = () => {
 	const [data, setData] = useState({});
 	const [message, setMessage] = useState({});
 	const { user, error, isLoading } = useUser();
@@ -112,4 +112,4 @@ const StarRating = ({ onChange }) => {
 		</div>
 	);
 };
-export default feedback;
+export default Feedback;

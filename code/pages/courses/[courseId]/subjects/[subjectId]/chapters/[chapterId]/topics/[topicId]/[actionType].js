@@ -4,7 +4,7 @@ import { Field, Form, Formik, useFormik } from "formik";
 import { useRouter } from "next/router";
 import Navbar from "../../../../../../../../../components/Navbar";
 
-const update = ({ topic }) => {
+const Update = ({ topic }) => {
 	const router = useRouter();
 	const { courseId, subjectId, chapterId, topicId, actionType } = router.query;
 	const [initialValue, setInitialValue] = useState();
@@ -139,4 +139,4 @@ const update = ({ topic }) => {
 	);
 };
 
-export default update;
+export default Update;

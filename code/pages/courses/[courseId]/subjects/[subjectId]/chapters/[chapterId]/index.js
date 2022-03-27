@@ -32,6 +32,7 @@ const Chapters = ({ chapter }) => {
 							{chapter?.topics?.map((topic, t_index) => {
 								return (
 									<Link
+										key={t_index}
 										href={`/courses/${chapter.courseId}/subjects/${chapter.subjectId}/chapters/${chapter.chapterId}/topics/${topic.topicId}/learn`}
 									>
 										<button
