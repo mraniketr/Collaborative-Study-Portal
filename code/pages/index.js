@@ -22,19 +22,18 @@ export default function Index() {
 					<div className="container flex flex-col items-center py-12 mx-auto sm:py-24">
 						<div className="flex-col items-center justify-center w-11/12 mb-5 sm:w-2/3 lg:flex sm:mb-10">
 							<h1 className="text-2xl font-black leading-7 text-center text-gray-800 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl md:leading-10">
-								The Freedom to Create the
-								<span className="text-blue-700">&nbsp;Websites&nbsp;</span>
-								You Want
+								Learn.
+								<span className="text-blue-700">&nbsp;Collab.&nbsp;</span>
+								Grow.
 							</h1>
 							<p className="mt-5 text-sm font-normal text-center text-gray-400 sm:mt-10 lg:w-10/12 sm:text-lg">
-								A professonal website drives sales. Create a beautiful website
-								to impress and engage new customers and establish your business
-								online
+								Open-Source Learning and Collaboration Platform
+
 							</p>
 						</div>
 						<div className="flex items-center justify-center">
 							<Link href={user ? "/courses" : "/api/auth/login"}>
-								<button className="px-4 py-2 text-sm text-white transition duration-150 ease-in-out bg-blue-700 border border-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 hover:bg-blue-600 lg:text-xl lg:font-bold sm:px-12 sm:py-4">
+								<button  className="px-4 py-2 text-sm text-white transition duration-150 ease-in-out bg-blue-700 border border-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 hover:bg-blue-600 lg:text-xl lg:font-bold sm:px-12 sm:py-4">
 									Get Started
 								</button>
 							</Link>
@@ -67,13 +66,10 @@ export default function Index() {
 					</div>
 					<div className="flex flex-col basis-2/5">
 						<div className="flex flex-row text-3xl font-semibold">
-							Get Access to best study material for Class 1-10th
+							Get currated study material from people around the world
 						</div>
 						<div className="flex flex-row mt-3 text-base max-w-[600px]">
-							Get Access to open community Get Access to open community Get
-							Access to open community Get Access to open community Get Access
-							to open community Get Access to open communityGet Access to open
-							community Get Access to open community
+							Get currated study materica
 						</div>
 					</div>
 				</div>
