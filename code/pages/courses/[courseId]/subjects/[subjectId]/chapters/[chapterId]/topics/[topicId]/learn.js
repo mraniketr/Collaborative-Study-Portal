@@ -7,6 +7,7 @@ import DiscussionCard from "../../../../../../../../../components/Discussioncard
 import ResourceCard from "../../../../../../../../../components/ResourceCard";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 import Link from "next/link";
+import ReactPlayer from 'react-player/youtube'
 
 const ViewCourse = ({ topic }) => {
 	return (
@@ -28,14 +29,7 @@ const ViewCourse = ({ topic }) => {
 					<div className="flex flex-row w-full h-full mb-3">
 						<div className="w-full h-full pt-3 pr-3">
 							<div className="w-full mb-3 bg-blue-200 h-[50vh]">
-								<iframe
-									className="w-full h-full"
-									src={"https://www.youtube.com/embed/Xf_VZ8GxU1Y"}
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen
-								></iframe>
+							<ReactPlayer url={topic.videoURL} width={"100%"} height={"100%"} controls={true}/>
 							</div>
 							<div className="w-full ">
 								<Tab.Group>
