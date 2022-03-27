@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Navbar from "../../../components/Navbar";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
-const add = () => {
+const Add = () => {
 	const router = useRouter();
 	const { course_id, actionType } = router.query;
 	const [initialValue, setInitialValue] = useState({});
@@ -95,7 +95,7 @@ const add = () => {
 								{actionType == "add" &&
 									values.subjects?.map((subject, index) => {
 										return (
-											<div className="flex flex-col my-3">
+											<div key={index} className="flex flex-col my-3">
 												<label htmlFor="firstName" className="text-sm">
 													Subject #{index + 1}
 												</label>
@@ -140,4 +140,4 @@ const add = () => {
 	);
 };
 
-export default add;
+export default Add;

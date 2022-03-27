@@ -38,6 +38,7 @@ const Subjects = ({ subject }) => {
 							{subject?.chapters?.map((chapter, s_index) => {
 								return (
 									<Link
+										key={s_index}
 										href={`/courses/${subject.courseId}/subjects/${subject.subjectId}/chapters/${chapter.chapterId}`}
 									>
 										<button

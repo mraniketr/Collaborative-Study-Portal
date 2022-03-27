@@ -2,10 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useUser } from "@auth0/nextjs-auth0";
 import Navbar from "../components/Navbar";
-
 import React, { Component } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "react-responsive-button/dist/index.css";
 import Link from "next/link";
 
 export default function Index() {
@@ -28,12 +25,11 @@ export default function Index() {
 							</h1>
 							<p className="mt-5 text-sm font-normal text-center text-gray-400 sm:mt-10 lg:w-10/12 sm:text-lg">
 								Open-Source Learning and Collaboration Platform
-
 							</p>
 						</div>
 						<div className="flex items-center justify-center">
 							<Link href={user ? "/courses" : "/api/auth/login"}>
-								<button  className="px-4 py-2 text-sm text-white transition duration-150 ease-in-out bg-blue-700 border border-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 hover:bg-blue-600 lg:text-xl lg:font-bold sm:px-12 sm:py-4">
+								<button className="px-4 py-2 text-sm text-white transition duration-150 ease-in-out bg-blue-700 border border-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 hover:bg-blue-600 lg:text-xl lg:font-bold sm:px-12 sm:py-4">
 									Get Started
 								</button>
 							</Link>
@@ -46,8 +42,7 @@ export default function Index() {
 							Get Access to open community
 						</div>
 						<div className="flex flex-row mt-3 text-base max-w-[600px]">
-							Collabrate with people around the world. 
-							Get your doubts cleared.
+							Collabrate with people around the world. Get your doubts cleared.
 						</div>
 					</div>
 					<div className="flex flex-col basis-2/5">
