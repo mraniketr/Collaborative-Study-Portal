@@ -36,7 +36,7 @@ const AssetEdit = ({ data, collName }) => {
 		});
 		console.log(res);
 
-		const res2 = await fetch("http://localhost:3000/api/InsertData", {
+		const res2 = await fetch(`${process.env.AUTH0_BASE_URL}/api/InsertData`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -102,7 +102,7 @@ const AssetEdit = ({ data, collName }) => {
 
 export const getServerSideProps = withPageAuthRequired({
 	async getServerSideProps(context) {
-		const res = await fetch("http://localhost:3000/api/ReadData", {
+		const res = await fetch(`${process.env.AUTH0_BASE_URL}/api/ReadData`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

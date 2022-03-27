@@ -27,7 +27,7 @@ const Update = ({ topic }) => {
 		}
 	}, []);
 	const fetchTopicDetails = async () => {
-		const res = await fetch("http://localhost:3000/api/ReadData", {
+		const res = await fetch(`${process.env.AUTH0_BASE_URL}/api/ReadData`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -61,25 +61,28 @@ const Update = ({ topic }) => {
 					initialValues={initialValue}
 					validationSchema={() => validationSchema}
 					onSubmit={async (values) => {
-						var res = await fetch("http://localhost:3000/api/InsertData", {
-							method: "POST",
-							headers: {
-								"Content-Type": "application/json",
-							},
-							body: JSON.stringify({
-								collection: "topics",
-								insertObj: {
-									activeStatus: false,
-									topicId: topicId,
-									topicName: values.topicName,
-									topicDescription: values.topicDescription,
-									videoURL: values.videoURL,
-									chapterId: chapterId,
-									courseId: courseId,
-									subjectId: subjectId,
+						var res = await fetch(
+							`${process.env.AUTH0_BASE_URL}/api/InsertData`,
+							{
+								method: "POST",
+								headers: {
+									"Content-Type": "application/json",
 								},
-							}),
-						});
+								body: JSON.stringify({
+									collection: "topics",
+									insertObj: {
+										activeStatus: false,
+										topicId: topicId,
+										topicName: values.topicName,
+										topicDescription: values.topicDescription,
+										videoURL: values.videoURL,
+										chapterId: chapterId,
+										courseId: courseId,
+										subjectId: subjectId,
+									},
+								}),
+							}
+						);
 						const data = await res.json();
 						console.log(data);
 						router.push(

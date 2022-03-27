@@ -37,7 +37,7 @@ const Feedback = () => {
 							onClick={async () => {
 								try {
 									var res = await fetch(
-										"http://localhost:3000/api/InsertData",
+										`${process.env.AUTH0_BASE_URL}/api/InsertData`,
 										{
 											method: "POST",
 											headers: {

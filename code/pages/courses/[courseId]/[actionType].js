@@ -21,7 +21,7 @@ const Add = () => {
 		}
 	}, []);
 	const fetchCourseDetails = async () => {
-		const res = await fetch("http://localhost:3000/api/ReadData", {
+		const res = await fetch(`${process.env.AUTH0_BASE_URL}/api/ReadData`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -53,23 +53,29 @@ const Add = () => {
 					initialValues={initialValue}
 					validationSchema={() => validationSchema}
 					onSubmit={async (values) => {
-						var res = await fetch("http://localhost:3000/api/InsertData", {
-							method: "POST",
-							headers: {
-								"Content-Type": "application/json",
-							},
-							body: JSON.stringify({
-								collection: "courses",
-								insertObj: {
-									activeStatus: false,
-									courseName: values.courseName,
-									subjects: values.subjects
-										.filter((e) => e !== "")
-										.map((e, index) => ({ subjectName: e, subjectId: index })),
-									courseId: course_id,
+						var res = await fetch(
+							`${process.env.AUTH0_BASE_URL}/api/InsertData`,
+							{
+								method: "POST",
+								headers: {
+									"Content-Type": "application/json",
 								},
-							}),
-						});
+								body: JSON.stringify({
+									collection: "courses",
+									insertObj: {
+										activeStatus: false,
+										courseName: values.courseName,
+										subjects: values.subjects
+											.filter((e) => e !== "")
+											.map((e, index) => ({
+												subjectName: e,
+												subjectId: index,
+											})),
+										courseId: course_id,
+									},
+								}),
+							}
+						);
 						const data = await res.json();
 						console.log(values);
 						router.push(`/courses/`);

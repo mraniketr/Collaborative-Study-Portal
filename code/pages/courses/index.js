@@ -81,7 +81,7 @@ const Courses = ({ courses }) => {
 
 export const getServerSideProps = withPageAuthRequired({
 	async getServerSideProps(context) {
-		const res = await fetch("http://localhost:3000/api/ReadData", {
+		const res = await fetch(`${process.env.AUTH0_BASE_URL}/api/ReadData`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
