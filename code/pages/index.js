@@ -46,10 +46,8 @@ export default function Index() {
 							Get Access to open community
 						</div>
 						<div className="flex flex-row mt-3 text-base max-w-[600px]">
-							Get Access to open community Get Access to open community Get
-							Access to open community Get Access to open community Get Access
-							to open community Get Access to open communityGet Access to open
-							community Get Access to open community
+							Collabrate with people around the world. 
+							Get your doubts cleared.
 						</div>
 					</div>
 					<div className="flex flex-col basis-2/5">
@@ -69,7 +67,7 @@ export default function Index() {
 							Get currated study material from people around the world
 						</div>
 						<div className="flex flex-row mt-3 text-base max-w-[600px]">
-							Get currated study materica
+							Get organised content at one place
 						</div>
 					</div>
 				</div>
