@@ -7,7 +7,7 @@ import DiscussionCard from "../../../../../../../../../components/Discussioncard
 import ResourceCard from "../../../../../../../../../components/ResourceCard";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 import Link from "next/link";
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from "react-player/youtube";
 
 const ViewCourse = ({ topic }) => {
 	return (
@@ -20,16 +20,21 @@ const ViewCourse = ({ topic }) => {
 			) : (
 				<div className="relative flex flex-col items-start px-6 pt-16">
 					<div className="flex flex-row items-center w-full py-2 text-base border-b border-black">
-						Class {topic.courseId} <span className="mx-4">{">"} </span>{" "}
-						{topic.subjectId}
+						Class {topic.courseName} <span className="mx-4">{">"} </span>{" "}
+						{topic.subjectName}
 					</div>
 					<div className="flex flex-row items-center w-full pt-2 pb-1 text-sm leading-none">
-						{topic.topicId}
+						{topic.topicName}
 					</div>
 					<div className="flex flex-row w-full h-full mb-3">
 						<div className="w-full h-full pt-3 pr-3">
 							<div className="w-full mb-3 bg-blue-200 h-[50vh]">
-							<ReactPlayer url={topic.videoURL} width={"100%"} height={"100%"} controls={true}/>
+								<ReactPlayer
+									url={topic.videoURL}
+									width={"100%"}
+									height={"100%"}
+									controls={true}
+								/>
 							</div>
 							<div className="w-full ">
 								<Tab.Group>
@@ -83,7 +88,8 @@ const ViewCourse = ({ topic }) => {
 												{topic.topicDescription}
 											</div>
 											<div className="flex flex-row mt-6 text-sm">
-												Video uploaded on: 22 Dec 2021
+												Last updated on:{" "}
+												{new Date(topic.lastUpdated).toLocaleDateString()}
 											</div>
 										</Tab.Panel>
 										<Tab.Panel className="p-3 bg-white rounded-xl focus:outline-none focus:ring-0">

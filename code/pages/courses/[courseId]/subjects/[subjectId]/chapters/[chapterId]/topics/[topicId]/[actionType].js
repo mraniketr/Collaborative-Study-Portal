@@ -83,7 +83,7 @@ const update = ({ topic }) => {
 						const data = await res.json();
 						console.log(data);
 						router.push(
-							`/courses/${courseId}/${subjectId}/${chapterId}/${topicId}/learn`
+							`/courses/${courseId}/subject/${subjectId}/chapters/${chapterId}/topics/${topicId}/learn`
 						);
 					}}
 				>

@@ -85,7 +85,7 @@ const update = () => {
 						});
 						const data = await res.json();
 						console.log(data);
-						router.push(`/courses/`);
+						router.push(`/courses/${courseId}/subjects/${subjectId}`);
 					}}
 				>
 					{({ values, ...formProps }) => (
