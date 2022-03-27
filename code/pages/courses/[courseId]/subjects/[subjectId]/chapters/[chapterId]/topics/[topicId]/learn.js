@@ -20,7 +20,7 @@ const ViewCourse = ({ topic }) => {
 			) : (
 				<div className="relative flex flex-col items-start px-6 pt-16">
 					<div className="flex flex-row items-center w-full py-2 text-base border-b border-black">
-						Class {topic.courseName} <span className="mx-4">{">"} </span>{" "}
+						{topic.courseName} <span className="mx-4">{">"} </span>{" "}
 						{topic.subjectName}
 					</div>
 					<div className="flex flex-row items-center w-full pt-2 pb-1 text-sm leading-none">
