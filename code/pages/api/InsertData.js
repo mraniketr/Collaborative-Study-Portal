@@ -10,7 +10,7 @@ const handler = async (req, res) => {
   if (req.method === "POST") {
     // console.log(res.insertObj);
     var insertObj = req.body.insertObj
-    insertObj['lastUpdated']= Date().getTime();
+    insertObj['lastUpdated']= new Date().getTime();
 
     await Collection.insertOne(insertObj);
     client.close();
